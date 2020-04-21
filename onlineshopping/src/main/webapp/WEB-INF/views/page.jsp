@@ -19,7 +19,7 @@
 
 <meta charset="utf-8">
 <meta name="viewport"
-	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="description" content="">
 <meta name="author" content="">
 
@@ -60,6 +60,13 @@
 			<c:if test="${userClickContact==true }">
 				<%@include file="contact.jsp"%>
 			</c:if>
+			
+			
+			<c:if test="${userClickAllProducts==true or userClickCategoryProducts==true  }">
+				<%@include file="listProducts.jsp"%>
+			</c:if>
+			
+			
 		</div>
 
 		<!-- Footer -->
